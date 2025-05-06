@@ -224,22 +224,24 @@ export default function RepositoryPage() {
                           <BookOpen className="h-8 w-8 text-primary" />
                         </div>
                         <div>
-                          <h3 className="font-bold">Data Structures and Algorithms - Lecture Notes</h3>
+                          <h3 className="font-bold">Technical English For Communication</h3>
                           <p className="text-sm text-muted-foreground">Complete semester notes with examples</p>
                           <div className="flex items-center gap-4 mt-2">
                             <span className="text-xs bg-muted px-2 py-1 rounded">CSE</span>
-                            <span className="text-xs bg-muted px-2 py-1 rounded">Semester 3</span>
+                            <span className="text-xs bg-muted px-2 py-1 rounded">Semester 1</span>
                           </div>
                         </div>
                       </div>
-                      <Button variant="outline" size="icon">
-                        <Download className="h-4 w-4" />
+                      <Button variant="outline" size="icon" asChild>
+                        <a href="https://drive.google.com/drive/folders/1J6HLwvhg17pLPJpmtWmA_tDopj3qJT1Z?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                          <Download className="h-4 w-4" />
+                        </a>
                       </Button>
                     </div>
                   </CardContent>
                 </Card>
 
-                <Card>
+                {/*<Card>
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between">
                       <div className="flex items-start gap-4">
@@ -283,7 +285,7 @@ export default function RepositoryPage() {
                       </Button>
                     </div>
                   </CardContent>
-                </Card>
+                </Card>*/}
               </div>
             </TabsContent>
           </Tabs>
