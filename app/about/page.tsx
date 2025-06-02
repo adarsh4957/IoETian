@@ -112,7 +112,7 @@ IoET offers various undergraduate degree courses of various field of engineering
                         <h3 className="text-2xl font-bold">Our Mission</h3>
                       </div>
                       <p className="text-muted-foreground">
-                      The mission of IET Sagar is to deliver quality technical education through modern teaching and infrastructure, fostering students’ intellectual and ethical growth. The institute strives to create an inclusive environment that equips students with the skills and values needed to succeed professionally and serve society. Through innovation, faculty development, and industry collaboration, IET Sagar prepares adaptable and responsible graduates for a rapidly evolving world.
+                      The mission of IoET Sagar is to deliver quality technical education through modern teaching and infrastructure, fostering students’ intellectual and ethical growth. The institute strives to create an inclusive environment that equips students with the skills and values needed to succeed professionally and serve society. Through innovation, faculty development, and industry collaboration, IET Sagar prepares adaptable and responsible graduates for a rapidly evolving world.
                       </p>
                     </div>
                     <div>

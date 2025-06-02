@@ -68,7 +68,7 @@ export default function HomePage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our History & Mission</h2>
               <p className="text-muted-foreground mb-4">
-                Founded in 1985, Ioetians has grown from a small engineering college to a comprehensive institution of
+                Founded in 2022, Ioetians has grown from a small engineering college to a comprehensive institution of
                 higher learning. Our journey has been marked by continuous innovation and a commitment to academic
                 excellence.
               </p>
@@ -144,7 +144,7 @@ export default function HomePage() {
 
           <div className="text-center mt-8">
             <Button asChild>
-              <Link href="/faculties">View All Faculties</Link>
+              <Link href="/about">View All Faculties</Link>
             </Button>
           </div>
         </div>
