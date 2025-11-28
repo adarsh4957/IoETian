@@ -14,24 +14,25 @@ type DriveLinks = {
 
 export default function RepositoryPage() {
   const [selectedBranch, setSelectedBranch] = useState("")
-  const [selectedYear, setSelectedYear] = useState("")
+  const [selectedSemester, setSelectedSemester] = useState("")
 
   const driveLinks: DriveLinks = {
-    "cse-2023": "https://drive.google.com/drive/folders/17nApw0VduvfG8VpgTtfRV5tK7yzpo58d?usp=drive_link",
-    "cse-2024": "https://drive.google.com/drive/folders/1simhIrJQxPsspSvdCrMv7vPXoWGdEH1A?usp=drive_link",
-    "ece-2023": "https://drive.google.com/drive/folders/1b6vzJR2d2bzPIzOUKP89FBUvG3ELY0-u?usp=drive_link",
-    "ece-2024": "https://drive.google.com/drive/folders/1QrgFpY35LjD3vmhaCj8NJ9ITgKwAndLx?usp=drive_link",
-    "ae-2023": "https://drive.google.com/drive/folders/1LQ2wEx49kjn5sKf9EW7--p7oUQnCnlR1?usp=drive_link",
-    "ae-2024": "https://drive.google.com/drive/folders/1oNdjztw01Va2KFAX32tLD39rGKWz6mg8?usp=drive_link",
+    "cse-sem-1": "https://drive.google.com/drive/folders/17nApw0VduvfG8VpgTtfRV5tK7yzpo58d?usp=drive_link",
+    "cse-sem-2": "https://drive.google.com/drive/folders/1simhIrJQxPsspSvdCrMv7vPXoWGdEH1A?usp=drive_link",
+    "cse-sem-3": "https://drive.google.com/drive/folders/1-qsTmhwtQ1HrGztTb4cTeNdIoEqV1xQ0?usp=sharing",
+    "ece-sem-1": "https://drive.google.com/drive/folders/1QrgFpY35LjD3vmhaCj8NJ9ITgKwAndLx?usp=drive_link",
+    "ece-sem-2": "https://drive.google.com/drive/folders/1b6vzJR2d2bzPIzOUKP89FBUvG3ELY0-u?usp=drive_link",
+    "ae-sem-1": "https://drive.google.com/drive/folders/1oNdjztw01Va2KFAX32tLD39rGKWz6mg8?usp=drive_link",
+    "ae-sem-2": "https://drive.google.com/drive/folders/1LQ2wEx49kjn5sKf9EW7--p7oUQnCnlR1?usp=drive_link",
   }
 
   const handleSearch = () => {
-    if (!selectedBranch || !selectedYear) {
-      alert("Please select both branch and year")
+    if (!selectedBranch || !selectedSemester) {
+      alert("Please select both branch and semester")
       return
     }
 
-    const linkKey = `${selectedBranch}-${selectedYear}`
+    const linkKey = `${selectedBranch}-sem-${selectedSemester}` as keyof DriveLinks;
     const driveLink = driveLinks[linkKey]
 
     if (driveLink) {
@@ -74,16 +75,17 @@ export default function RepositoryPage() {
               </div>
 
               <div>
-                <label htmlFor="year" className="block text-sm font-medium mb-2">
-                  Year
+                <label htmlFor="semester" className="block text-sm font-medium mb-2">
+                  Semester
                 </label>
-                <Select onValueChange={setSelectedYear}>
-                  <SelectTrigger id="year">
-                    <SelectValue placeholder="Select Year" />
+                <Select onValueChange={setSelectedSemester}>
+                  <SelectTrigger id="semester">
+                    <SelectValue placeholder="Select Semester" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="2024">2024</SelectItem>
-                    <SelectItem value="2023">2023</SelectItem>
+                    <SelectItem value="1">Semester 1</SelectItem>
+                    <SelectItem value="2">Semester 2</SelectItem>
+                    <SelectItem value="3">Semester 3</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
