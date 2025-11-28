@@ -8,7 +8,7 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Ioetians - College of Engineering and Technology",
+  title: "Ioetians",
   description: "A premier institution dedicated to excellence in education and innovation",
     generator: 'v0.dev'
 }
